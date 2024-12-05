@@ -148,7 +148,7 @@ export default function Wheel(props){
 
     return (
         <>
-                    <Controller  maxVelLimit={20} jumpVel={10} disableControl={false} camInitDir={{x: 0.4, y: 0}} density={10} mass={2} jumpForceToGroundMult={5}  type={"dynamic"} friction={1}  mode={"FixedCamera"} ref={ref}
+                    <Controller  maxVelLimit={5} jumpVel={5} disableControl={false} camInitDir={{x: 0.4, y: 0}} density={10} mass={2}   type={"dynamic"} friction={3}  mode={"FixedCamera"} ref={ref}
                                 camInitDis={-20}     colliders={"ball"} >
                         <Gltf src={"./asset/model/ball.glb"}   />
                     </Controller>
