@@ -23,8 +23,8 @@ const keyboardMap = [
   {name: "backward", keys: ["ArrowDown", "s", "S"]},
   {name: "leftward", keys: ["ArrowLeft", "a", "A"]},
   {name: "rightward", keys: ["ArrowRight", "d", "D"]},
-  {name: "jump", keys: ["Space"]},
-  {name: "action4", keys: ["KeyF"]},
+  { name: "jump", keys: ["Space"] },
+  { name: "run", keys: ["Shift"] },
 ];
 
 
@@ -43,7 +43,7 @@ function App() {
         <Sky distance={1000} />
         <KeyboardControls map={keyboardMap}>
 
-          <Physics debug={true}  >
+          <Physics debug={false}  >
 
             <Wheel/>
             <Planes/>
@@ -52,7 +52,7 @@ function App() {
 
         </KeyboardControls>
         {
-          //<CameraControls/>
+         // <CameraControls/>
         }
       </Canvas>
 </div>

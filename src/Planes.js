@@ -12,8 +12,8 @@ export default function Planes(props) {
 
     return (
         <>
-            <RigidBody ref={ref} type={"fixed"} colliders={"cuboid"} >
-                <primitive castShadow receiveShadow object={nodes.road} name={"road"}/>
+            <RigidBody ref={ref} type={"fixed"} colliders={"trimesh"} >
+                <primitive  castShadow receiveShadow object={nodes.road} name={"road"}/>
             </RigidBody>
 
         </>
